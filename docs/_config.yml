@@ -1,5 +1,5 @@
-title: Long Short-Term Memory Neural Network for Modeling the English language
-name: LSTM NN
+title: LSTM Neural Network
+name: LSTMNN
 description: Long Short-Term Memory (LSTM) neural network for modeling the English language.
 author: Luisa Rojas
 theme: jekyll-theme-minimal
