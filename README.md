@@ -2,6 +2,8 @@
 
 ### Dependencies
 
+`Keras 2.1.2`
+
 ### Command-line Execution
 
 ## Modeling the English Language using LSTMs.
