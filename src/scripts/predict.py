@@ -1,7 +1,6 @@
 ### ---------- Handle Command Line Arguments ----------
 
 import argparse
-import helper
 
 a = argparse.ArgumentParser(description="Generate sentences in English using LSTM Networks.")
 a.add_argument("-v", "--version", action='version', version='%(prog)s 1.0.0')
@@ -13,6 +12,7 @@ a.add_argument("--slen", help="maximum length for a training sequence (default: 
 a.add_argument("-win", help="select sliding window for text iteration and data collection for training (default: 3)", type=int, default=3)
 args = a.parse_args()
 
+import helper
 helper.sequence_length = args.slen
 helper.step_window = args.win
 
