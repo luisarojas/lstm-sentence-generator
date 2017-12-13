@@ -34,7 +34,7 @@ Directory Path: `/src/scripts/`
 	|`--slen SLEN`|maximum length for a training sequence (default: 15)|
 	|`-win WIN`|select sliding window for text iteration and data collection for training (default: 3)|
 	
-* **Make predictions:**: `python predict.py [-h] [-v] [--data DATA] [--seed SEED] [--nwords NWORDS] [--temp TEMP] [--slen SLEN] [-win WIN]`
+* **Make predictions**: `python predict.py [-h] [-v] [--data DATA] [--seed SEED] [--nwords NWORDS] [--temp TEMP] [--slen SLEN] [-win WIN]`
 	
 	Optional arguments:
 	
