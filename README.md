@@ -2,7 +2,7 @@
 
 The goal of this work is to model the English language as closely as humanly possible through the use of Long Short-Term Memory (LSTM) Networks. To achieve this, every word is transformed into a feature vector, which is used as input; and the output is the next most probable word to follow. As a result, the network will produce a sequence of words, which should resemble a coherent English sentence after enough training. The network will learn these probabilities through the use of a large list of words; more specifically, the literature novel "Twelve Short Mystery Stories” by Sapper (Ronald Standish) <sup>[1](#projgut)</sup>.<br><br>
 
-<center><img src="./readme_res/predict.gif" height=230></center>
+<center><img src="docs/res/predict.gif" height=230></center>
 
 <br>
 
