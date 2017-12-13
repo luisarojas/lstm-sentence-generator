@@ -3,10 +3,10 @@
 import argparse
 import helper
 
-a = argparse.ArgumentParser(prog='Distracted Driver Detection', description="Generate sentences in English using LSTM Networks.")
+a = argparse.ArgumentParser(description="Generate sentences in English using LSTM Networks.")
 a.add_argument("-v", "--version", action='version', version='%(prog)s 1.0.0')
-a.add_argument("--seed", help="provide a word or sentence to seed the program with")
 a.add_argument("--data", help="path to training data (default: sample_data_long.txt)", default='sample_data_long.txt')
+a.add_argument("--seed", help="provide a word or sentence to seed the program with")
 a.add_argument("--nwords", help="number of words to generate (default: 400)", type=int, default=400)
 a.add_argument("--temp", help="select temperature value for prediction diversity (default: 1.0)", type=float, default=1.0)
 a.add_argument("--slen", help="maximum length for a training sequence (default: 15)", type=int, default=15)
@@ -33,9 +33,10 @@ all_words, unique_words = load_file(args.data)
 total_num_words = len(all_words)
 len_vocab = len(unique_words)
 
-print()
+print('\n----------------------------')
 print("> Total number of words:\t" + str(total_num_words))
 print("> Length of vocabulary:\t\t" + str(len_vocab))
+print('----------------------------')
 
 word_to_int = dict((c, i) for i, c in enumerate(unique_words))
 int_to_word = dict((i, c) for i, c in enumerate(unique_words))
@@ -105,7 +106,7 @@ if args.seed:
         if word not in word_to_int.keys():
             seed_sentence[i] = get_random_word()[0]
     
-    print('-> seed: "' + user_input + '" ...\n')
+    print('\n-> seed: "' + user_input + '" ...\n')
 
 else:
 

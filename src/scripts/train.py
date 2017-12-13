@@ -3,7 +3,7 @@
 import argparse
 import helper
 
-a = argparse.ArgumentParser(prog='Distracted Driver Detection', description="Train a model that, using LSTM Networks, is to generate sentences in English.")
+a = argparse.ArgumentParser(description="Train a model that, using LSTM Networks, is to generate sentences in English.")
 a.add_argument("-v", "--version", action='version', version='%(prog)s 1.0.0')
 a.add_argument("--data", help="path to training data (default: sample_data_short.txt)", default='sample_data_short.txt')
 a.add_argument("--epochs", help="number of epochs to train for (default: 50)", type=int, default=50)
@@ -35,7 +35,7 @@ all_words, unique_words = load_file(args.data)
 total_num_words = len(all_words)
 len_vocab = len(unique_words)
 
-print()
+print('\n----------------------------')
 print("> Total number of words:\t" + str(total_num_words))
 print("> Length of vocabulary:\t\t" + str(len_vocab))
 
@@ -62,6 +62,7 @@ for i in range(0, total_num_words - sequence_length, step_window):
 
 num_train_patters = len(x_data)
 print('> Total patterns:\t\t' + str(num_train_patters))
+print('----------------------------')
 
 ### ---------- Prepare Training Data ----------
 
