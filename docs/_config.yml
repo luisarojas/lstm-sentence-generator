@@ -1,5 +1,5 @@
-title: LSTM Neural Network
-name: LSTMNN
-description: Long Short-Term Memory (LSTM) neural network for modeling the English language.
+title: Generating Sentences Using LSTM Networks
+name: Generating Sentences Using LSTM Networks
+description: Generating English sentences using Long Short-Term Memory (LSTM) Networks
 author: Luisa Rojas
 theme: jekyll-theme-minimal
