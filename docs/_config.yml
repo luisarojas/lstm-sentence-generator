@@ -3,3 +3,5 @@ name: Generating Sentences Using LSTM Networks
 description: Generating English sentences using Long Short-Term Memory (LSTM) Networks
 author: Luisa Rojas
 theme: jekyll-theme-minimal
+github:
+  repository_url: https://github.com/lrojas12/lstm-sentence-generator
