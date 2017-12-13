@@ -22,8 +22,8 @@ Directory Path: `/src/scripts/`
 
 * **Train the model**: `python train.py [-h] [-v] [--data DATA] [--epochs EPOCHS] [--temp TEMP] [--slen SLEN] [-win WIN]`
 
-	
-	
+	Optional arguments:
+
 	| | |
 	|-------------|--------|
 	|`-h`, `--help`|show help message and exit |
